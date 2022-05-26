@@ -161,35 +161,16 @@ const Detail = () => {
             'checkout_is_avaliable',
           );
           if (awesomeNewFeature.getSource() === 'remote') {
-            console.log('Parameter value was from the Firebase servers.');
+            // console.log('Parameter value was from the Firebase servers.');
             if (checkouteAvaliable.asBoolean() === true) {
-              console.log('Vou mostrar o checkout.');
+              // console.log('Vou mostrar o checkout.');
               setShowCheckoutButton(true);
-            } else {
-              console.log('Nao Vou mostrar o checkout.');
             }
-            if (awesomeNewFeature.asBoolean() === true) {
-              console.log('Vou mostrar o modulo.');
-              //   setHasModule(true);
-            } else {
-              console.log('Nao Vou mostrar o modulo.');
-            }
-          } else if (awesomeNewFeature.getSource() === 'default') {
-            console.log('Parameter value was from a default value.');
-          } else {
-            console.log('Parameter value was from a locally cached value.');
           }
-
-          // console.log('Configs were retrieved from the backend and activated.');
-          // const hasModule = remoteConfig().getValue('has_module_1');
-          // if (hasModule.getSource() === 'remote') {
-          //   console.log(
-          //     'Vou mostrar o modulo::: ' +
-          //       JSON.stringify(hasModule.asBoolean()),
-          //   );
-          // }
-          // if (hasModule.asBoolean() === true) {
-          //   console.log('Vou mostrar o modulo');
+          // else if (awesomeNewFeature.getSource() === 'default') {
+          //   console.log('Parameter value was from a default value.');
+          // } else {
+          //   console.log('Parameter value was from a locally cached value.');
           // }
         } else {
           console.log(
